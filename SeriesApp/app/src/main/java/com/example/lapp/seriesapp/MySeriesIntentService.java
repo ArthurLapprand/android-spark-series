@@ -51,7 +51,8 @@ public class MySeriesIntentService extends IntentService {
                         ((JSONObject) o.get("image")).get("medium").toString(),
                         ((JSONObject) o.get("rating")).get("average").toString(),
                         o.get("status").toString(),
-                        o.get("language").toString()
+                        o.get("language").toString(),
+                        o.get("premiered").toString()
                 ));
             }
 

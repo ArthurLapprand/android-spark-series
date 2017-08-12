@@ -1,7 +1,6 @@
 package com.example.lapp.seriesapp;
 
 import android.app.Application;
-import android.support.v7.widget.RecyclerView;
 
 import com.example.lapp.seriesapp.adapters.SerieFragment;
 
@@ -15,6 +14,7 @@ public class SeriesApplication extends Application {
 
     ArrayList<Serie> series;
     SerieFragment serieFragment;
+    Serie item;
 
     @Override
     public void onCreate() {
@@ -37,5 +37,13 @@ public class SeriesApplication extends Application {
 
     public void setSerieFragment(SerieFragment serieFragment) {
         this.serieFragment = serieFragment;
+    }
+
+    public Serie getItem() {
+        return item;
+    }
+
+    public void setItem(Serie item) {
+        this.item = item;
     }
 }

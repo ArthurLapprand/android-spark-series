@@ -1,5 +1,7 @@
 package com.example.lapp.seriesapp;
 
+import android.graphics.Bitmap;
+
 /**
  * Created by Lapp on 11/08/2017.
  */
@@ -12,15 +14,19 @@ public class Serie {
     private String rating;
     private String status;
     private String language;
+    private String premiered;
+    private Bitmap image;
 
     public Serie(String name, String url, String medImgUrl,
-                 String rating, String status, String language) {
+                 String rating, String status, String language,
+                 String premiered) {
         this.name = name;
         this.url = url;
         this.medImgUrl = medImgUrl;
         this.rating = rating;
         this.status = status;
         this.language = language;
+        this.premiered = premiered;
     }
 
     public String getName() {
@@ -69,5 +75,21 @@ public class Serie {
 
     public void setLanguage(String language) {
         this.language = language;
+    }
+
+    public String getPremiered() {
+        return premiered;
+    }
+
+    public void setPremiered(String premiered) {
+        this.premiered = premiered;
+    }
+
+    public Bitmap getImage() {
+        return image;
+    }
+
+    public void setImage(Bitmap image) {
+        this.image = image;
     }
 }

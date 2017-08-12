@@ -25,7 +25,9 @@
 
         <service
             android:name=".MySeriesIntentService"
-            android:exported="false"></service>
+            android:exported="false" />
+
+        <activity android:name=".DetailsActivity"></activity>
     </application>
 
 </manifest>
